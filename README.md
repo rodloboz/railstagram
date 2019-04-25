@@ -19,7 +19,7 @@ https://railstagram.herokuapp.com/
 
 Clone:
 
-    git clone git@github.com:rodloboz/railstagram.git
+    git clone -b tutorial-start git@github.com:rodloboz/railstagram.git
 
 Setup database and seeds:
 
