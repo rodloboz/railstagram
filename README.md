@@ -8,7 +8,7 @@
 
 Clone:
 
-    git clone git@code.git.lightthefuse.run:sportspots/mvp.git
+    git clone git@github.com:rodloboz/railstagram.git
 
 Setup database and seeds:
 
