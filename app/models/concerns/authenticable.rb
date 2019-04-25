@@ -9,6 +9,7 @@ module Authenticable
 
     validates :username,
               presence: true,
+              with: /\A(?=.*[a-z])[a-z\d]+\Z/i,
               uniqueness: { case_sensitive: false }
 
     protected

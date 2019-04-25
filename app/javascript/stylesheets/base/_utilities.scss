@@ -2,6 +2,66 @@
   @apply mx-auto px-2 pt-16
 }
 
+.flex-grow-2 {
+  flex-grow: 2;
+}
+
+.flex-basis-0 {
+  flex-basis: 0;
+}
+
+.flex-basis-1 {
+  flex-basis: 0.25rem;
+}
+
+.flex-basis-2 {
+  flex-basis: 0.5rem;
+}
+
+.flex-basis-3 {
+  flex-basis: 0.75rem;
+}
+
+.flex-basis-4 {
+  flex-basis: 1rem;
+}
+
+.flex-basis-6 {
+  flex-basis: 1.5rem;
+}
+
+.flex-basis-8 {
+  flex-basis: 2rem;
+}
+
+.flex-basis-10 {
+  flex-basis: 2.5rem;
+}
+
+.flex-basis-12 {
+  flex-basis: 3rem;
+}
+
+.flex-basis-16 {
+  flex-basis: 4rem;
+}
+
+.flex-basis-24 {
+  flex-basis: 6rem;
+}
+
+.flex-basis-32 {
+  flex-basis: 8rem;
+}
+
+.flex-basis-48 {
+  flex-basis: 12rem;
+}
+
+.flex-basis-64 {
+  flex-basis: 16rem;
+}
+
 @media (min-width: 1200px) {
   .page-wrapper {
     max-width: 975px;
