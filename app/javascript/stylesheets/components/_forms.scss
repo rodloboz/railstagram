@@ -1,0 +1,11 @@
+.form-inputs {
+  input {
+    @apply my-2 w-full;
+  }
+}
+
+.form-group {
+  input {
+    @apply border rounded bg-gray-100 p-2 text-sm;
+  }
+}

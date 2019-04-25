@@ -1,0 +1,17 @@
+.brand-icon {
+  font-size: 1.62rem;
+
+  @apply my-auto;
+}
+
+.brand-text {
+  @apply font-brand font-medium tracking-wide;
+}
+
+.brand-text-lg {
+  @apply text-4xl;
+}
+
+.brand-text-xl {
+  @apply text-5xl;
+}

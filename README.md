@@ -11,6 +11,10 @@
 
 ![DB Schema Screenshot](/screenshots/schema.png?raw=true)
 
+# Heroku Live Example
+
+https://railstagram.herokuapp.com/
+
 # Setup
 
 Clone:

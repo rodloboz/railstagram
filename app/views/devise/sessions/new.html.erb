@@ -1,20 +1,37 @@
-<h2>Log in</h2>
+<div class="bg-white text-center border mb-2 py-2">
+  <h1 class="brand-text brand-text-xl mx-auto my-4">Railstagram</h1>
+  <div class="mb-2 p-10">
+    <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+    <div class="form-inputs">
+      <%= f.input :email,
+        label: false,
+        placeholder: 'Username or email',
+        required: false,
+        autofocus: true,
+        input_html: { autocomplete: "email" }
+      %>
+      <%= f.input :password,
+        label: false,
+        placeholder: 'Password',
+        required: false,
+        input_html: { autocomplete: "current-password" }
+      %>
 
-<%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="form-inputs">
-    <%= f.input :email,
-                required: false,
-                autofocus: true,
-                input_html: { autocomplete: "email" } %>
-    <%= f.input :password,
-                required: false,
-                input_html: { autocomplete: "current-password" } %>
-    <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
+      <div class="form-actions">
+        <%= f.button :submit, "Log in", class: 'btn btn-blue' %>
+      </div>
+    </div>
+    <% end %>
+
+    <%- if devise_mapping.recoverable? && controller_name != 'passwords' && controller_name != 'registrations' %>
+      <%= link_to "Forgot password?", new_password_path(resource_name), class: 'text-blue-800 text-sm mt-2' %><br />
+    <% end %>
   </div>
+</div>
 
-  <div class="form-actions">
-    <%= f.button :submit, "Log in" %>
-  </div>
-<% end %>
-
-<%= render "devise/shared/links" %>
+<div class="bg-white text-center border mb-2 py-2">
+  <p class="text-gray-600 text-sm m-3">
+    Don't have an account?
+    <%= link_to "Sign up", new_registration_path(resource_name), class: 'text-blue-800 font-bold' %>
+  </p>
+</div>

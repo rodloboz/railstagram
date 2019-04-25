@@ -1,18 +1,39 @@
-<h2>Forgot your password?</h2>
-
-<%= simple_form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
-  <%= f.error_notification %>
-
-  <div class="form-inputs">
-    <%= f.input :email,
-                required: true,
-                autofocus: true,
-                input_html: { autocomplete: "email" } %>
+<div class="bg-white text-center border pt-2">
+  <div class="brand-text brand-text-xl mx-auto my-4 border-2 border-black rounded-full h-24 w-24 flex items-center justify-center">
+    <%= icon('fas', 'lock') %>
   </div>
-
-  <div class="form-actions">
-    <%= f.button :submit, "Send me reset password instructions" %>
+  <div class="text-blue-800 mb-4">
+    <h4>Trouble Logging In?</h4>
   </div>
-<% end %>
+  <div class="text-gray-600 text-sm px-10">
+    Enter your username or email and we'll send you a link to get back into your account.
+  </div>
+  <div class="mb-2 px-10">
+    <%= simple_form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+      <%= f.error_notification %>
 
-<%= render "devise/shared/links" %>
+      <div class="form-inputs">
+        <%= f.input :email,
+          label: false,
+          placeholder: 'Email or Username',
+          required: true,
+          autofocus: true,
+          input_html: { autocomplete: "email" }
+        %>
+
+        <div class="form-actions">
+          <%= f.button :submit, "Send Reset Password Instructions", class: 'btn btn-blue' %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+  <div class="text-gray-600 font-bold mx-10 my-4">
+    OR
+  </div>
+  <div class="mb-10">
+    <%= link_to "Create New Account", new_registration_path(resource_name), class: 'text-blue-800' %>
+  </div>
+  <div class="border bg-gray-100 p-3">
+    <%= link_to "Back To Login", new_session_path(resource_name), class: 'text-blue-800' %>
+  </div>
+</div>
