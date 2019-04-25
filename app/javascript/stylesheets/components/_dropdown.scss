@@ -1,0 +1,7 @@
+.dropdown-item {
+  @apply px-4 py-2 block text-black ;
+}
+
+.dropdown-item:hover {
+  @apply bg-gray-100;
+}

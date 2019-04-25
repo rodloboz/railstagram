@@ -16,18 +16,23 @@
           input_html: { autocomplete: "email" }
         %>
 
+        <%= f.input :full_name,
+          label: false,
+          placeholder: 'Full Name',
+          required: true
+        %>
+
+        <%= f.input :username,
+          label: false,
+          placeholder: 'Username',
+          required: true
+        %>
+
         <%= f.input :password,
           label: false,
           placeholder: 'Password',
           required: true,
           input_html: { autocomplete: "new-password" }
-        %>
-
-        <%= f.input :password_confirmation,
-          label: false,
-          placeholder: 'Password confirmation',
-          required: true,
-          input_html: { autocomplete: "new-password" } 
         %>
 
         <div class="form-actions">
