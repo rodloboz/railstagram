@@ -1,5 +1,12 @@
 ## Railstragram: Instagram Clone with Ruby on Rails
 
+# Stack
+
+* Rails 6
+* Webpacker 4
+* Turbolinks
+* Tailwindcss 1.0
+
 # DB Schema
 
 ![DB Schema Screenshot](/screenshots/schema.png?raw=true)

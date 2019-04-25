@@ -1,9 +1,7 @@
-import 'bootstrap';
-import Turbolinks from 'turbolinks';
-import Rails from 'rails-ujs';
-
-const turbolinks = Turbolinks.start();
-const rails = Rails.start();
+require('stylesheets/application.scss');
+require('turbolinks').start();
+require('@rails/ujs').start();
+// require('@rails/activestorage').start();
 
 document.addEventListener('turbolinks:load', () => {
   console.log('Hello from webpacker!')
