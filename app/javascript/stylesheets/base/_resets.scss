@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+  overflow-x: hidden !important;
+  height: 100vh;
+
+  @apply bg-gray-100;
+}
+
+section {
+  overflow-x: hidden;
+}
+
+button,
+a {
+  cursor: pointer;
+
+  * {
+    pointer-events: none;
+  }
+}
