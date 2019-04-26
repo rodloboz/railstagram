@@ -1,19 +1,16 @@
-## Railstragram: Instagram Clone with Ruby on Rails
+## Railstagram: Instagram Clone
 
 # Stack
 
 * Rails 6
-* Webpacker 4
+* Stimulus Js
 * Turbolinks
 * Tailwindcss 1.0
+* Webpacker 4
 
 # DB Schema
 
 ![DB Schema Screenshot](/screenshots/schema.png?raw=true)
-
-# Heroku Live Example
-
-https://railstagram.herokuapp.com/
 
 # Setup
 

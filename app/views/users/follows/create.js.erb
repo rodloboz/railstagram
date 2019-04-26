@@ -1,0 +1,6 @@
+var followBtn = '<%= j render "users/follow_btn", user: @user %>';
+document.getElementById('follow-btn').innerHTML = followBtn;
+document.getElementById('followers-count').innerHTML = '<%= @user.followers_count %>';
+document.getElementById('followings-count').innerHTML = '<%= @user.followings_count %>';
+
+// element.dispatchEvent(new Event('keyup'));

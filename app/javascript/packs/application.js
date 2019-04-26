@@ -1,8 +1,11 @@
 require('stylesheets/application.scss');
-require('turbolinks').start();
 require('@rails/ujs').start();
-// require('@rails/activestorage').start();
+require('turbolinks').start();
+// require('@rails/activestorage').start()
+// require('channels')
+
+import 'controllers';
 
 document.addEventListener('turbolinks:load', () => {
-  console.log('Hello from webpacker!')
+  console.log('Hello from webpacker!');
 });

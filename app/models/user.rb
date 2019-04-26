@@ -1,5 +1,6 @@
 class User < ApplicationRecord
   include Authenticable
+  include Followable
 
   def to_param
     username
