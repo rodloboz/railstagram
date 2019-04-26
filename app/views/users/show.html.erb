@@ -1,0 +1,62 @@
+<header class="flex mb-16" data-controller="follow-button">
+  <div class="flex-grow flex-shrink-0 flex-basis-0 mr-8 flex flex-col items-center">
+    <%= image_tag avatar_url(@user), class: 'avatar avatar-4xl' %>
+  </div>
+  <section class="flex-grow-2 flex-basis-24">
+    <div class="flex items-center mb-2">
+      <h1 class="text-3xl font-light"><%= @user.username %></h1>
+      <%= render 'follow_btn', user: @user %>
+    </div>
+    <ul class="flex mb-4">
+      <li class="mr-8"><span class="font-bold">29</span> posts</li>
+      <li class="mr-8">
+        <span id="followers-count"
+              class="font-bold"
+              data-target="follow-button.followerCount"><%= @user.followers_count %></span>&nbsp
+        <span data-target="follow-button.followerMessage"></span>
+      </li>
+      <li>
+        <span id="followings-count" class="font-bold">
+          <%= @user.followings_count %>
+        </span> following
+      </li>
+    </ul>
+    <div>
+      <h2 class="font-bold"><%= @user.first_name %></h2>
+      <span>My money's in that office, right? If she start giving me some bullshit about it ain't there, and we got to go someplace else and get it, I'm gonna shoot you in the head then and there. Then I'm gonna shoot that bitch in the kneecaps, find out where my goddamn money is. She gonna tell me too. Hey, look at me when I'm talking to you, motherfucker. You listen: we go in there, and that nigga Winston or anybody else is in there, you the first motherfucker to get shot. You understand?</span>
+    </div>
+  </section>
+</header>
+<div class="border-t flex items-center justify-center text-gray-600 uppercase text-sm text-medium">
+  <a href="#" class="mr-8 h-12 flex items-center border-t border-black text-black">
+    <span>
+      <%= icon('fas', 'th-large') %>
+      <span class="ml-1">Posts</span>
+    </span>
+  </a>
+  <a href="#" class="h-12 flex items-center">
+    <span>
+      <%= icon('fas', 'portrait') %>
+      <span class="ml-1">Tagged</span>
+    </span>
+  </a>
+</div>
+<div>
+  <div class="grid text-center mb-10">
+    <div class="w-full">
+      <img src="https://unsplash.it/293" alt="" class="object-cover" style="margin: 0 !important">
+    </div>
+    <div>
+      <img src="https://unsplash.it/293" alt="" class="object-cover">
+    </div>
+    <div>
+      <img src="https://unsplash.it/293" alt="" class="object-cover">
+    </div>
+    <div>
+      <img src="https://unsplash.it/293" alt="" class="object-cover">
+    </div>
+    <div>
+      <img src="https://unsplash.it/293" alt="" class="object-cover">
+    </div>
+  </div>
+</div>

@@ -1,0 +1,23 @@
+<div id="follow-btn">
+  <% if current_user.is_following?(user) %>
+    <%= link_to user_unfollow_path(user.username), method: :delete,
+                                                   data: {
+                                                     target: 'follow-button.link',
+                                                     action: 'ajax:success->follow#update'
+                                                    },
+                                                   remote: true do
+    %>
+      <button class="btn btn-blue ml-4">Unfollow</button>
+    <% end %>
+  <% else %>
+    <%= link_to user_follow_path(user.username), method: :post,
+                                                 data: {
+                                                   target: 'follow-button.link',
+                                                   action: 'ajax:success->follow#update'
+                                                 },
+                                                 remote: true do
+    %>
+      <button class="btn btn-blue ml-4">Follow</button>
+    <% end %>
+  <% end %>
+</div>

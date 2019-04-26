@@ -5,8 +5,6 @@
   </div>
   <div class="mb-2 p-10">
     <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-      <%= f.error_notification %>
-
       <div class="form-inputs">
         <%= f.input :email,
           label: false,
@@ -16,18 +14,23 @@
           input_html: { autocomplete: "email" }
         %>
 
+        <%= f.input :full_name,
+          label: false,
+          placeholder: 'Full Name',
+          required: true
+        %>
+
+        <%= f.input :username,
+          label: false,
+          placeholder: 'Username',
+          required: true
+        %>
+
         <%= f.input :password,
           label: false,
           placeholder: 'Password',
           required: true,
           input_html: { autocomplete: "new-password" }
-        %>
-
-        <%= f.input :password_confirmation,
-          label: false,
-          placeholder: 'Password confirmation',
-          required: true,
-          input_html: { autocomplete: "new-password" } 
         %>
 
         <div class="form-actions">

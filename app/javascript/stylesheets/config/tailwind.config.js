@@ -10,7 +10,7 @@ module.exports = {
         100: '#fafafa',
         200: '#edf2f7',
         300: '#e2e8f0',
-        400: '#cbd5e0',
+        400: '#dbdbdb',
         500: '#a0aec0',
         600: '#a5a7aa',
         700: '#4a5568',
@@ -128,7 +128,8 @@ module.exports = {
     },
   },
   variants: {
-    // Some useful comment
+    borderColors: ['responsive', 'hover', 'focus', 'group-hover'],
+    visibility: ['responsive', 'group-hover'],
   },
   plugins: [
     // Some useful comment

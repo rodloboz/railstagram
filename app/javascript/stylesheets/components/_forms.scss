@@ -9,3 +9,7 @@
     @apply border rounded bg-gray-100 p-2 text-sm;
   }
 }
+
+.invalid-feedback {
+  @apply text-red-500 text-sm;
+}
